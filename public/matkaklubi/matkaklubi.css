@@ -1,0 +1,117 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;;
+}
+
+.paiskonteiner {
+    background-image: url("./pildid/Hills/Hills.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 778px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paiskonteiner .menyyriba {
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paiskonteiner .menyyriba .logo {
+    display: flex;
+}
+
+.klubilogo {
+    width: 90px;
+    height: 90px;
+	margin-top: -10px;
+	margin-left: -10px;
+}
+
+.klubinimi {
+	font-size: 33px;
+	line-height: 35px;
+	font-weight: 800;
+	font-family: 'Montserrat', sans-serif;
+    max-width: 126px;
+    text-transform: uppercase;
+}
+
+.paiskonteiner .menyyriba .menyy {
+    font-family: 'Montserrat', sans-serif;
+	font-size: 16.67px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2.67px;
+}
+
+.paiskonteiner .menyyriba .menyy ul {
+    display: flex;  
+    list-style-type: none;
+}
+
+.paiskonteiner .menyyriba .menyy li {
+    padding: 0px;
+    margin-left: 10px;
+    min-width: 100px;
+}
+
+.container.matkadekonteier {
+    padding-top: 120px;
+}
+
+.pealkirjad {
+    padding-top: 150px;
+}
+
+.tiitliriba h1 {
+    text-transform: uppercase;
+    font-size: 74px;
+    font-weight: 700;
+}
+
+.tiitliriba h2 {
+    text-transform: uppercase;
+   font-size: 40px; 
+}
+
+.tiitliriba h3 {
+    text-transform: uppercase;
+    font-size: 21px;
+}
+
+.pealispilt {
+	overflow: hidden;
+}
+
+.pealispilt img {
+    display: block;
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: -400px;
+}
+
+.nupp-paises {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2.25px;
+    font-size: 12px;
+    line-height: 46px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border-radius: 0px;
+    color: white;
+    background-color: black;
+    margin-top: 20px;
+}
+
+.nupp-paises:active {
+    background-color: darkgray;
+}
+

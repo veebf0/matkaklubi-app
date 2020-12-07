@@ -13,14 +13,14 @@ body {
     margin-right: auto;
 }
 
-.paiskonteiner .menyyriba {
+.menyyriba {
     padding-top: 30px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.paiskonteiner .menyyriba .logo {
+.menyyriba .logo {
     display: flex;
 }
 
@@ -40,7 +40,7 @@ body {
     text-transform: uppercase;
 }
 
-.paiskonteiner .menyyriba .menyy {
+.menyyriba .menyy {
     font-family: 'Montserrat', sans-serif;
 	font-size: 16.67px;
 	font-weight: bold;
@@ -48,12 +48,12 @@ body {
 	letter-spacing: 2.67px;
 }
 
-.paiskonteiner .menyyriba .menyy ul {
+.menyyriba .menyy ul {
     display: flex;  
     list-style-type: none;
 }
 
-.paiskonteiner .menyyriba .menyy li {
+.menyyriba .menyy li {
     padding: 0px;
     margin-left: 10px;
     min-width: 100px;

@@ -8,19 +8,17 @@
 
 <body>
     <div class="container">
-        <div class="menyyriba">
-            <div class="logo">
-                <img class="klubilogo" src="./matkaklubi/pildid/Hills/klubilogo.png" alt="" />
-                <div class="klubinimi">Puhas Higi</div>
-            </div>
-            <div class="menyy">
-                <ul>
-                    <li>Esileht</li>
-                    <li>Kontakt</li>
-                </ul>
-            </div>
-        </div>
+        <% include ../partials/menyy.ejs %>
         <div class="container">
+            <h1>Registreeru matkale <%= andmed.nimi %></h1>
+            <div class="row">
+                <div class="col sm-6">
+                    <%= andmed.kirjeldus %>
+                </div>
+                <div class="col-sm-6">
+                    <img class="img-fluid" src="<%= andmed.piltUrl %>" alt="">
+                </div>
+            </div>
             <div class="row">
                 <form action="#" method="GET">
                     <div class="form-group">

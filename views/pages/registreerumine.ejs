@@ -4,6 +4,7 @@
 <head>
     <title>Matkaklubi - registreerumine</title>
     <% include ../partials/header.ejs %>
+    <script src="/matkaklubi/registreeru.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
                     <img class="img-fluid" src="<%= andmed.piltUrl %>" alt="">
                 </div>
             </div>
-            <div class="row">
+            <div id="registreerumisvorm" class="row">
                 <form action="#" method="GET">
                     <div class="form-group">
                         <label for="registreerujaEmail">Email</label>
@@ -34,12 +35,17 @@
                         <textarea class="form-control" rows="3" name="registreerujaMarkus" id="registreerujaMarkus"></textarea>
 
                     </div>
-                    <input type="submit" class="btn btn-primary" value="Registreeru">
+                    <input 
+                        type="button" 
+                        class="btn btn-primary" 
+                        value="Registreeru" 
+                        onclick="return registreeru()" 
+                    >
                 </form>
             </div>
         </div>
     </div>
-
+    <input type="hidden" id="matkIndex" name="matkIndex" value="<%= matk %>">
 </body>
 
 </html>

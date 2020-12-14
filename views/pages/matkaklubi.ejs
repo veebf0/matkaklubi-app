@@ -36,62 +36,22 @@
     </div>
     <div class="container matkadekonteier">
         <div class="row">
+            <% for ( let i = 0; i < matkad.length; i++) { %>
             <div class="col-sm-6 col-lg-4">
                 <div class="card">
-                    <img class="card-img-top" src="./matkaklubi/pildid/rattamatk2.jpg">
+                    <img class="card-img-top" src="<%= matkad[i].piltUrl %>">
                     <div class="card-body">
                         <h4 class="card-title">
-                            Rattamatk Tapal
+                            <%= matkad[i].nimi %>
                         </h4>
                         <p class="card-text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis expedita quisquam tenetur assumenda ullam ipsa, ut perspiciatis eveniet libero hic vero reprehenderit amet aperiam harum, delectus vel quibusdam consequatur esse!
+                            <%= matkad[i].kirjeldus %>
                         </p>
-                        <a href="/registreeru?matk=1" class="btn btn-primary">Registreeru</a>
+                        <a href="<%= matkad[i].registreeruUrl %>" class="btn btn-primary">Registreeru</a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="card">
-                    <img class="card-img-top" src="./matkaklubi/pildid/matk_tartus1.jpg">
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            Kepikõnnimatk Tartus
-                        </h4>
-                        <p class="card-text">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, earum quibusdam? Esse, dolore quaerat ipsam dolor animi cumque temporibus perferendis in vitae corrupti nesciunt voluptatibus voluptatem mollitia alias nihil magnam.
-                        </p>
-                        <a href="/registreeru?matk=2" class="btn btn-primary">Registreeru</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="card">
-                    <img class="card-img-top" src="./matkaklubi/pildid/syst1.jpg">
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            Süstamatk Kõrvemaal
-                        </h4>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur sed atque dolore. Molestias numquam deserunt libero. Facere tenetur nobis vero perspiciatis rerum distinctio animi magni, repellat modi saepe maxime beatae!
-                        </p>
-                        <a href="/registreeru?matk=3" class="btn btn-primary">Registreeru</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="card">
-                    <img class="card-img-top" src="./matkaklubi/pildid/kirsi6ied_tyril.jpg">
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            Jalutuskäik õitsevate kirsside keskel Türis
-                        </h4>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit numquam temporibus, neque odit dolores quibusdam iusto, aperiam eligendi nobis qui cum aut architecto laboriosam, expedita soluta id quaerat illo officiis.
-                        </p>
-                        <a href="/registreeru?matk=4" class="btn btn-primary">Registreeru</a>
-                    </div>
-                </div>
-            </div>
+            <% } %>
         </div>
 
     </div>
